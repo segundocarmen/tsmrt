@@ -1,0 +1,281 @@
+@import 'buttons.sass' 
+@import 'login.sass'
+@import 'shared/grid-card.sass'
+@import 'components/modal.sass'
+@import 'components/courses.sass'
+@import 'components/careers.sass'
+@import 'components/students.sass'
+@import 'components/content.sass'
+@import 'components/table.sass'
+@import 'components/dropdown.sass'
+@import 'components/filter-table.sass'
+@import 'components/tabs.sass'
+@import 'components/footer.sass'
+@import '404.sass'
+@import 'university.sass'
+@import 'components/spam.sass'
+@import 'components/range-editor.sass'
+@import 'components/dropzone.sass' 
+@import 'selects.sass'
+
+    
+* 
+    font-family: $main-font
+    margin: 0
+    color: $default-color
+    // box-sizing: border-box
+//estilos input number
+
+body 
+    overflow: auto !important
+
+.cicle__input,
+.days__input
+    .el-input-number__decrease,
+    .el-input-number__increase
+        display: flex !important
+        height: 95% !important
+    .el-input-number
+        width: 130px
+        .el-input
+            max-width: 130px
+    .el-icon-minus,
+    .el-icon-plus
+        display: flex
+        margin-top: 2px
+        width: 100%
+        justify-content: center
+        align-items: center
+        &:before
+                font-family: fontastic
+                font-size: 16px
+                color: #909399
+    .el-icon-minus
+        &:before
+                content: 'V'
+    .el-icon-plus
+        &:before
+                content: 'W'
+    .el-input-number__decrease, .el-input-number__increase
+        &:hover
+            background-color: #ecf5ff
+            i::before
+                color: #1283FF !important
+
+.days__input
+    padding-left: 30px
+//Estilos de la tabla
+.el-date-table td.end-date span, .el-date-table td.start-date span
+    color: #fff
+.el-date-range-picker__header div
+    font-size: 10px  !important
+    font-weight: bold !important
+    line-height: 10px !important
+    color: #415061 !important
+    font-family: $default-font !important
+    text-transform: capitalize
+.el-date-range-picker .el-picker-panel__body
+    min-width: inherit !important
+    max-width: 480px !important
+    margin: 0 !important
+.el-date-range-picker table
+    margin-top: 10px
+.el-picker-panel__icon-btn
+    margin-top: 0 !important
+.el-date-range-picker
+    width: 480px !important
+.el-date-table td span
+    line-height: 15px !important
+    height: 15px !important
+    width: 15px !important
+    color: rgba(65,80,97,0.7)
+.el-date-table td.end-date div
+    display: flex !important
+    align-items: center !important
+.el-date-table td span,
+.el-date-table th
+    padding:  0px !important
+    font-size: 9px !important
+.el-picker-panel__content
+    height: 253px !important
+.el-date-range-picker__content.is-left
+    border-right: 0 !important
+    &:before
+            content: ''
+            height: 90%
+            width: 1px
+            background: #DCDFE6
+            display: block
+            position: absolute
+            right: 0
+.el-date-range-picker__header
+    height: 12px !important
+    .el-icon-d-arrow-left
+        padding: 0
+        &:before
+                content: 'Y'
+                font-family: "fontastic"
+                color: #415061
+    .el-icon-arrow-left
+        margin-left: 10px
+        padding: 0
+        line-height: 12px
+        &:before
+                content: 'e'
+                font-family: "fontastic"
+                color: #415061
+                font-size: 10px
+    .el-icon-arrow-right
+        margin-right: 10px
+        padding: 0
+        line-height: 12px
+        &:before
+                content: 'E'
+                font-family: "fontastic"
+                color: #415061
+                font-size: 9px
+    .el-icon-d-arrow-right
+        padding: 0
+        &:before
+                content: 'X'
+                font-family: "fontastic"
+                color: #415061
+.el-date-table td div
+    height: 20px !important
+    padding: 0px !important
+.el-date-table td.in-range div, .el-date-table td.in-range div:hover, .el-date-table.is-week-mode .el-date-table__row.current div, .el-date-table.is-week-mode .el-date-table__row:hover div
+    background-color: rgba(18,131,255,0.1) !important
+.el-date-table td.next-month, .el-date-table td.prev-month
+    opacity: 0.2 !important
+
+
+
+.button_error
+    height: 42px
+    width: 168px
+    border-radius: 50px
+    span
+        color: #1283FF
+        font-size: 12px
+        letter-spacing: 1px
+        line-height: 14px
+        font-family: $main-font
+        font-weight: bold
+    
+ul 
+    list-style: none
+
+.el-aside
+    z-index: 1
+    box-shadow: 2px 6px 12px 0 rgba(198,212,212,0.33)
+    width: 270px !important
+    position: relative
+    transition: all 0.4s !important
+    &.el-aside--collapse
+            width: 75px !important
+.el-main
+    background-color: $background-color
+    min-height: 100vh
+    padding: 70px 130px 83px 60px !important
+    position: relative
+    // overflow-x: auto !important
+    // overflow-y: inherit !important
+    // overflow: hidden
+.el-tooltip__popper
+    &.is-dark
+        background-color: $main-color !important
+        min-width: 40px
+        height: 10px
+        line-height: 10px !important
+        font-size: 10px
+        span 
+            color: #ffffff 
+            font-weight: 100
+            font-family: $default-font
+        .popper__arrow
+            border-right-color: $main-color !important
+            &:after
+                border-right-color: $main-color !important
+
+.el-input-number__decrease
+    border-right: 1px solid #ebedf0 !important
+.el-input-number__increase
+    border-left: 1px solid #ebedf0 !important
+
+.el-form-item
+    .el-date-editor,
+    .el-input__inner
+        border: 0.5px solid #ebedf0 !important
+        &:hover
+            border: 0.5px solid #ebedf0 !important
+    &.is-success
+        .el-input__inner
+            border-color: rgba(220, 223, 230, 0.2) !important
+            &:focus
+                border-color: $main-color !important
+    &.is-required
+        .el-form-item__label
+            &:before
+                // content: '' !important
+    &.is-error
+        .el-input__inner
+            border-color: #FF7C7C !important
+
+.el-input__inner
+    -webkit-font-smoothing: antialiased
+
+.el-form-item__error
+    -webkit-font-smoothing: antialiased
+    font-weight: 100
+.el-form-item__label
+    font-weight: lighter
+    font-family: $default-font
+
+.visualization-icon
+    font-size: 20px
+    color: #98a8b7
+    position: relative
+    top: 5px
+    right: 10px
+    cursor: pointer 
+    @include transition(.5s)
+    opacity: 0
+    &:hover 
+        color: #3C99FF
+        opacity: 1 !important
+
+.el-input-number
+    line-height: 39px !important
+    .el-input
+        input 
+            cursor: not-allowed
+            pointer-events: none
+.icon-ic-options-normal
+    &:hover
+        color: #1283FF
+        background: transparent !important
+.is-active-dropdown
+    i
+        color: #1283FF
+
+
+.dropdown__icon
+    font-size: 25px
+    margin-left: 18px
+    cursor: pointer
+
+.el-table__column-filter-trigger
+    i 
+        position: relative
+        top: 2px
+        left: 1px
+        font-size: 10px !important
+        &::before 
+            content: "t"
+            color: #909399 !important
+            @extend .fontastic-icon
+            
+@media screen and (max-width: 1100px)
+    .el-main
+        padding-left: 20px !important
+        padding-right: 20px !important

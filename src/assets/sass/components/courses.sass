@@ -1,0 +1,451 @@
+.action__btns
+    position: absolute
+    right: 25px
+    width: 12%
+    top: 50%
+    display: flex
+    width: 128px
+    transform: translateY(-50%)
+    transition: all 0.4s
+.action__btns__students
+    @extend .action__btns
+    width: 85px
+.options__btn
+    display: flex
+    position: absolute
+    right: 0
+    opacity: 1
+    visibility: visible
+    // transition: all 0.25s
+.search__transition
+    .el-input
+        position: absolute
+    .options__btn
+        opacity: 0
+        visibility: hidden
+    .action__btns
+        width: calc(100% - 25px )
+        // left: 0
+        transition: all 0.8s
+        border-bottom: 1px solid rgba(153, 164, 166, 0.4)
+        .add
+            opacity: 0
+            visibility: hidden
+        i
+            margin-left: 0
+        ::-webkit-input-placeholder  /* Chrome/Opera/Safari */
+            color: #7B8FA0
+            font-size: 24px
+            letter-spacing: 0.48px
+            font-family: $main-font
+            opacity: 0.4
+        ::-moz-placeholder  /* Firefox 19+ */
+            color: #7B8FA0
+            font-size: 24px
+            letter-spacing: 0.48px
+            font-family: $main-font
+            opacity: 0.4
+        :-ms-input-placeholder  /* IE 10+ */
+            color: #7B8FA0
+            font-size: 24px
+            letter-spacing: 0.48px
+            font-family: $main-font
+            opacity: 0.4
+        :-moz-placeholder  /* Firefox 18- */
+            color: #7B8FA0
+            font-size: 24px
+            letter-spacing: 0.48px
+            font-family: $main-font
+            opacity: 0.4
+    .search__input-box
+        display: block !important
+    .courses__dropdown
+        opacity: 0
+        visibility: hidden
+    .title
+        visibility: hidden
+        opacity: 0
+
+.search__close-modal
+    cursor: pointer
+.search__input-box
+    position: absolute 
+    left: 0 
+    right: 0
+    top: 0
+    bottom: 0
+    font-size: 24px
+    letter-spacing: 0.48px
+    color: #7B8FA0
+    display: none !important
+    input
+        padding-left: 40px !important
+        color: #7B8FA0
+        font-size: 24px
+        letter-spacing: 0.48px
+        caret-color: #41505E
+    span
+        display: flex
+        align-items: center
+        font-size: 25px
+    input
+        border: 0
+        background: transparent
+    .input__suffix
+        right: 0px 
+.courses
+    margin-bottom: 15px
+    position: relative
+    z-index: 10
+.state__course
+    height: 10px
+    width: 10px
+    border-radius: 50%
+    display: flex
+    background: #99A4A6
+    margin: auto
+    &.active
+            background: #7ED321
+.blue__button
+    border: 1px solid #1283FF !important
+    span
+        color: #1283FF
+.course__pagination
+    top: 40px
+    opacity: 1
+.el-table th, 
+.el-table tr
+    background-color: #F9FBFE !important
+    background: #F9FBFE !important
+
+
+// DETAIL
+
+.message__no-data
+  margin-bottom: 30px
+  margin-top: 105px
+  h3
+        color: #7B8FA0
+        opacity: 0.4
+        font-weight: normal
+        font-family: $main-font
+        font-size: 24px
+        letter-spacing: 0.48px
+        line-height: 27px
+        -webkit-font-smoothing: antialiased
+.icon__edit
+    position: absolute
+    right: 0
+    font-size: 25px
+    display: flex
+    align-items: center
+    cursor: pointer
+.el-table th.is-leaf
+    border-bottom: 1px solid rgba(18, 131, 255, 0.3)
+.teacher__table
+    margin-top: -14px
+    .el-table__row
+        td
+            &:first-child
+                    padding-left: 20px
+    thead
+        th
+            padding-bottom: 0
+            &:first-child
+                    padding-left: 20px
+            &:nth-child(2)
+                    // padding-right: 75px
+.career__list-container
+    display: flex
+    padding-left: 0
+    margin-bottom: 15px
+    padding-top: 3px
+    flex-wrap: wrap
+.career__list-item
+    border: 0.5px solid #1283FF
+    height: 47px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding-left: 17px
+    min-width: 195px
+    padding-right: 17px
+    box-sizing: border-box
+    border-radius: 4px
+    margin-right: 16px
+    margin-bottom: 15px
+    p
+        font-size: 13px
+        color: #415061
+        letter-spacing: 0.26px
+        margin-bottom: 2px
+        -webkit-font-smoothing: antialiased
+    span
+        color: #7B8FA0
+        font-size: 10px
+        letter-spacing: 0.2px
+        line-height: 14px
+        -webkit-font-smoothing: antialiased
+.detail__info
+    display: flex
+    align-items: center
+    i
+        display: flex
+        align-items: center
+
+
+.icon-prev
+    display: flex
+    align-items: center 
+    font-size: 15px
+    margin-right: 8px
+    text-decoration: none
+    position: absolute
+    right: 100%
+.detail__course-info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 12px
+    ul
+        padding-left: 0
+    li
+        list-style: none
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        i
+            color: #1283FF
+        strong
+            margin-left: 6px
+            margin-right: 8px
+            font-weight: 600
+            font-size: 14px
+        p 
+            font-family: "Open Sans"
+            font-size: 14px
+            letter-spacing: 0.53px
+            color: #2C363F
+            -webkit-font-smoothing: antialiased
+.detail__course-code
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    span
+        color: #1283FF
+        font-size: 10px
+        opacity: 0.7
+        letter-spacing: 0.45px
+        line-height: 14px
+        font-weight: bold
+        font-family: 'Open Sans'
+        margin-bottom: 3px
+    strong
+        font-size: 20px
+        font-family: 'Asap'
+        font-weight: 600
+        letter-spacing: 0.4px
+        color: #415061
+        text-transform: uppercase
+
+.state__teachers
+    height: 11px
+    width: 11px
+    background-color: #99A4A6
+    display: flex
+    border-radius: 50%
+    margin: 0
+    margin-right: 5px
+    &.active
+            background-color: #7ED321
+            
+.teacher__fullname 
+    font-size: 14px
+    -webkit-font-smoothing: antialiased
+    font-weight: 100
+    .strong
+        font-weight: 600
+        -webkit-font-smoothing: auto
+
+.state__teacher-container
+    display: flex
+    align-items: center
+    justify-content: center
+    // padding-right: 82px
+    span
+        color: #7B8FA0
+        letter-spacing: 0.24px
+        font-size: 12px
+        line-height: 25px
+        font-family: $default-font
+        font-weight: normal
+        -webkit-font-smoothing: antialiased
+
+//NEW - EDIT
+
+.teacher__container
+    width: 100%
+    border: 1px solid red
+    padding: 40px 20px
+    input
+        width: 232px
+.multiple__select-input
+    margin-bottom: 17px !important
+    .el-input
+        width: 232px
+        height: 40px !important
+        position: relative
+        input
+            height: 40px !important
+            background-color: rgba(255,255,255,0.5)
+            border: 0.5px solid #ebedf0
+            font-size: 10px
+            color: #909399
+            -webkit-font-smoothing: antialiased
+        &.is-focus
+                input
+                    border-color: #DCDFE6 !important
+    .el-input__suffix
+        display: none
+
+.courses__list-container
+    display: flex
+    flex-wrap: wrap
+    background: rgba(255,255,255,0.4)
+    border: 0.5px solid #ebedf0
+    // box-shadow: 2px 6px 12px 0 rgba(198,212,212,0.33)
+    width: auto
+    padding: 25px
+    max-width: 100%
+    margin: 0 0 0 auto
+    border-radius: 8px
+    padding-bottom: 12px
+    margin-bottom: 30px
+    margin-top: 20px
+    margin-left: 60px
+    margin-bottom: 43px
+    .el-tag--info
+        opacity: 0 !important
+        visibility: hidden !important
+        pointer-events: none !important
+        position: absolute
+    input[type="text"]::-webkit-input-placeholder
+        color: #909399
+        font-size: 10px
+        font-family: $default-font
+.blue__item-list
+    width: 222px
+    display: flex
+    background: #1283FF
+    align-items: flex-start
+    min-height: 44px
+    box-sizing: border-box
+    margin-right: 30px
+    margin-bottom: 15px
+    border-radius: 6px
+    flex-direction: column
+    justify-content: center
+    padding: 0 15px
+    position: relative
+    p
+        letter-spacing: 0.24px
+        color: #fff
+        line-height: 15px
+        margin: 0
+        font-size: 12px
+        font-family: $default-font
+        font-weight:  normal
+        -webkit-font-smoothing: antialiased
+        word-break: break-all
+        padding-right: 10px
+    i
+        color: #fff
+        font-size: 9px
+        position: absolute
+        right: 12px
+        top: 12px
+        cursor: pointer
+    &.h24
+            height: 24px
+            width: 150px
+            .blue__item-lastname
+                font-weight: lighter !important
+                font-size: 10px
+                letter-spacing: 0.2px
+                line-height: 15px
+                color: #FCFDFF
+            i
+                top: 50%
+                transform: translateY(-50%)
+                margin-top: 2px
+.blue__item-lastname
+    font-weight: bold !important
+.blue__item-name
+    font-weight: normal
+.course_career-add
+    display: flex
+    align-items: center 
+    .el-select
+        width: 100%
+    > button
+            margin-left: 33px
+
+.courses__input-ctn
+    display: flex
+    margin-bottom: 75px
+
+.courses__input-ctn,
+.course_career-add
+    .el-form-item__content
+        margin-left: 0 !important
+        width: 100%
+        input
+            color: #909399
+            line-height: 18px
+            font-weight: normal
+            font-family: $default-font
+            font-family: "Open Sans"
+    label
+        text-align: left
+        width: inherit !important
+        color:#909399
+        font-weight: normal
+        -webkit-font-smoothing: antialiased
+    .el-form-item
+        margin-bottom: 0
+        display: flex
+        flex: 1
+        &.margin-right
+                margin-right: 40px
+
+.course_career-box
+    background-color: rgba(255,255,255,0.4)
+    border: 0.5px solid rgba(212,215,215,0.69)
+    margin-left: 58px
+    margin-top: 18px
+    min-height: 48px
+    padding: 20px
+    box-sizing: border-box
+    border-radius: 8px
+    display: flex
+    flex-wrap: wrap
+
+
+
+.new_course
+    .el-form 
+        padding-top: 15px
+    .add__button--course
+        border: 1px solid $main-color !important
+        border-radius: 24px
+        width: 115px
+        height: 25px
+        line-height: 0.3px
+        span 
+            color: $main-color !important
+            font-size: 9px
+            letter-spacing: 0.54px
+            position: relative
+            bottom: 1.2px
+        &.is-disabled 
+            opacity: 0.7

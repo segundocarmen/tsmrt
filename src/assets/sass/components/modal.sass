@@ -1,0 +1,114 @@
+.wabu-dialog
+    background-color: rgba(249,251,254,0.8)
+    .el-dialog 
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2)
+        border-radius: 14px
+        background-color: $main-color
+        .el-dialog__header 
+            .el-dialog__close       
+                color: #ffffff
+                font-weight: 800
+                opacity: 0.5
+                @include transition(.2s)
+                &:hover
+                    color: #FFF
+                    //opacity: 1
+        .el-dialog__body
+            padding: 30px 35px 35px
+            i, p
+                color: #ffffff
+            i 
+                font-size: 45px
+            p 
+                font-size: 16px
+                letter-spacing: 0.72px
+                font-weight: 500
+                -webkit-font-smoothing: antialiased
+        .el-dialog__footer
+            padding-bottom: 25px
+        .dialog-footer
+            .el-button 
+                height: 31px
+                width: 80px
+                font-size: 10px
+                letter-spacing: 0.6px
+                padding: 0
+                margin-left: 16px
+                font-weight: bold
+            &.disable
+                .el-button 
+                    opacity: 0.5
+
+
+.wabu-dialog
+    background-color: rgba(249,251,254,0.8)
+    .sweet-modal
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2)
+        border-radius: 14px
+        background-color: $main-color
+        .sweet-content 
+            padding: 60px 35px 25px !important
+            .sweet-content-content
+                text-align: left
+            i, p
+                color: #ffffff
+            i 
+                font-size: 45px
+                line-height: 0
+            p 
+                font-size: 16px
+                letter-spacing: 0.72px
+                font-weight: 500
+                -webkit-font-smoothing: antialiased
+            .dialog-footer
+                padding-top: 45px
+                text-align: right
+                .el-button 
+                    height: 31px
+                    width: 80px
+                    font-size: 10px
+                    letter-spacing: 0.6px
+                    padding: 0
+                    margin-left: 16px
+                    font-weight: bold
+                    span 
+                        -webkit-font-smoothing: initial
+                &.disable
+                    .el-button 
+                        opacity: 0.7
+
+.el-dialog__wrapper
+    display: flex
+    align-items: center
+.wabu-visor
+    background-color: #FCFDFF
+    .sweet-modal
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2)
+        border-radius: 14px
+        background-color: #FCFDFF
+        border: 0.5px solid #1283FF
+        .sweet-content
+            padding: 10px !important
+            padding-top: 5px
+            .dialog-footer
+                padding: 0 !important
+    .el-button
+        background: transparent
+        opacity: 0.9
+        border: none
+        height: 30px !important
+        width: 30px !important
+        position: relative
+        i
+            font-size: 14px !important
+            color: #1283FF !important
+        &:hover
+            background: transparent
+            i
+                color: #333 !important
+    .dialog-footer
+        position: absolute
+        right: 5px
+    .sweet-content-content
+        display: flex !important
+        justify-content: center !important

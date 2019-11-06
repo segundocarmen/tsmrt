@@ -1,0 +1,55 @@
+router:
+  base: "/"
+
+axios:
+  baseURL: "http://0.0.0.0:3000/"
+  browserBaseURL: /
+  debug: true
+
+proxy:
+  "/api/authentication":
+    target: http://internal.wabu.tismart.com/authentication-service
+  "/api/country":
+    target: http://internal.wabu.tismart.com/country-service
+  "/api/college":
+    target: http://internal.wabu.tismart.com/college-service
+  "/api/career":
+    target: http://internal.wabu.tismart.com/career-service
+  "/api/course":
+    target: http://internal.wabu.tismart.com/course-service
+  "/api/suggest":
+    target: http://internal.wabu.tismart.com/suggest-service
+  "/api/teacher":
+    target: http://internal.wabu.tismart.com/teacher-service
+  "/api/faculty":
+    target: http://internal.wabu.tismart.com/faculty-service
+  "/api/location":
+    target: http://internal.wabu.tismart.com/location-service
+  "/api/calendar":
+    target: http://internal.wabu.tismart.com/calendar-service
+  "/api/student":
+    target: http://internal.wabu.tismart.com/student-service
+  "/api/register-enrollment":
+    target: http://internal.wabu.tismart.com/register-enrollment-service
+  "/api/document":
+    target: http://internal.wabu.tismart.com/document-service
+  "/api/question":
+    target: http://internal.wabu.tismart.com/question-service
+  "/api/award":
+    target: http://internal.wabu.tismart.com/award-service
+  "/api/competitor":
+    target: http://internal.wabu.tismart.com/competitor-service
+  "/api/comment":
+    target: http://internal.wabu.tismart.com/comment-service
+  "/api/point":
+    target: http://internal.wabu.tismart.com/point-service
+
+healthcheck:
+  path: "/health"
+
+#S3 Access
+aws:
+  s3:
+    region: "us-west-2"
+    bucket: "wabu-dev-us-west-2"
+    cognitoId: "us-west-2:732420e5-11d7-49df-a42b-2e9cab6001de"

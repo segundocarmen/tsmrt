@@ -1,0 +1,49 @@
+.vue-dropzone.dropzone
+    border: .5px dashed rgba(123,143,160,.3)
+    background-color: #f9fbfe 
+    border-radius: 12px
+    box-shadow: 0 3px 9px 0 rgba(0,0,0,.04), 0 1px 3px 0 rgba(0,0,0,.04), 0 1px 3px 0 rgba(0,0,0,.04)
+    @include transition(0.25s ease-in-out)
+
+#smallDropzone, 
+#bigDropzone 
+    border: 0.5px dashed rgba(123, 143, 160, 0.3)
+    background-color: #F9FBFE
+    padding: 0 !important
+    overflow: hidden
+    position: relative
+    .dz-preview-image 
+        background-size: cover
+        background-position: center
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+    .dz-default.dz-message
+        margin: 0
+        display: block
+        position: absolute
+        z-index: 999
+        width: 100%
+        height: 100%
+        transition: opacity .2s linear
+    .dz-specifications
+        background-color: #f9fbfe
+        // opacity: 0.7
+        padding-top: 25px
+        margin: 0
+        height: 100%
+        transition: all 0.25s ease-in-out
+        i 
+            font-size: 38px
+            line-height: 1 
+        p 
+            color: #909399
+    .dz-img-specifications-container
+        height: 100%
+        .dz-specifications
+            opacity: 0
+        &:hover 
+            .dz-specifications
+                opacity: 0.7

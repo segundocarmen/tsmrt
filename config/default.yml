@@ -1,0 +1,51 @@
+router:
+  base: "/"
+
+axios:
+  baseURL: "http://0.0.0.0:3000/"
+browserBaseURL: /api
+debug: true
+
+proxy:
+  "/api/authentication":
+    target: http://192.168.0.123:6500
+  "/api/country":
+    target: http://192.168.0.123:6502
+  "/api/college":
+    target: http://192.168.0.123:6505
+  "/api/career":
+    target: http://192.168.0.123:6512
+  "/api/course":
+    target: http://192.168.0.123:6513
+  "/api/suggest":
+    target: http://192.168.0.123:6517
+  "/api/teacher":
+    target: http://192.168.0.123:6514
+  "/api/faculty":
+    target: http://192.168.0.123:6514
+  "/api/location":
+    target: http://192.168.0.123:6514
+  "/api/calendar":
+    target: http://192.168.0.123:6514
+  "/api/student":
+    target: http://192.168.0.123:6514
+  "/api/register-enrollment":
+    target: http://192.168.0.123:6511
+  "/api/point":
+    target: http://192.168.0.123:6511
+#  '/api/question':
+#   target: http://192.168.0.123:6514
+#  '/api/award':
+#   target: http://192.168.0.123:6514
+#  '/api/competitor':
+#   target: http://192.168.0.123:6514
+
+healthcheck:
+  path: "/health"
+
+#S3 Access
+aws:
+  s3:
+    region: "us-west-2"
+    bucket: "wabu-dev-us-west-2"
+    cognitoId: "us-west-2:732420e5-11d7-49df-a42b-2e9cab6001de"

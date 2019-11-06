@@ -1,0 +1,55 @@
+router:
+  base: "/"
+
+axios:
+  baseURL: "http://0.0.0.0:3000/"
+  browserBaseURL: /
+  debug: true
+
+proxy:
+  "/api/authentication":
+    target: CLIENT_AUTHENTICATION_WEBHOST
+  "/api/country":
+    target: CLIENT_COUNTRY_WEBHOST
+  "/api/college":
+    target: CLIENT_COLLEGE_WEBHOST
+  "/api/career":
+    target: CLIENT_CAREER_WEBHOST
+  "/api/course":
+    target: CLIENT_COURSE_WEBHOST
+  "/api/suggest":
+    target: CLIENT_SUGGEST_WEBHOST
+  "/api/teacher":
+    target: CLIENT_TEACHER_WEBHOST
+  "/api/faculty":
+    target: CLIENT_FACULTY_WEBHOST
+  "/api/location":
+    target: CLIENT_LOCATION_WEBHOST
+  "/api/calendar":
+    target: CLIENT_CALENDAR_WEBHOST
+  "/api/student":
+    target: CLIENT_STUDENT_WEBHOST
+  "/api/register-enrollment":
+    target: CLIENT_REGISTERENROLLMENT_WEBHOST
+  "/api/document":
+    target: CLIENT_DOCUMENT_WEBHOST
+  "/api/award":
+    target: CLIENT_AWARD_WEBHOST
+  "/api/question":
+    target: CLIENT_QUESTION_WEBHOST
+  "/api/competitor":
+    target: CLIENT_COMPETITOR_WEBHOST
+  "/api/point":
+    target: CLIENT_POINT_WEBHOST
+  "/api/comment":
+    target: CLIENT_COMMENT_WEBHOST
+
+healthcheck:
+  path: "/health"
+
+#S3 Access
+aws:
+  s3:
+    region: "us-west-2"
+    bucket: "wabu-dev-us-west-2"
+    cognitoId: "us-west-2:732420e5-11d7-49df-a42b-2e9cab6001de"

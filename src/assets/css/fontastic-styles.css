@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "fontastic";
+  src:url("../fonts/fontastic.eot");
+  src:url("../fonts/fontastic.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/fontastic.woff") format("woff"),
+    url("../fonts/fontastic.ttf") format("truetype"),
+    url("../fonts/fontastic.svg#fontastic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "fontastic" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontastic" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic-activar:before {
+  content: "\62";
+}
+.icon-ic-add-normal:before {
+  content: "\63";
+}
+.icon-ic-alumno:before {
+  content: "\64";
+}
+.icon-ic-back-normal:before {
+  content: "\65";
+}
+.icon-ic-calification-normal:before {
+  content: "\67";
+}
+.icon-ic-carga-masiva-normal:before {
+  content: "\68";
+}
+.icon-ic-carreras:before {
+  content: "\69";
+}
+.icon-ic-checkbox-mark:before {
+  content: "\6a";
+}
+.icon-ic-checkbox-normal:before {
+  content: "\6b";
+}
+.icon-ic-ciclo:before {
+  content: "\6c";
+}
+.icon-ic-cross-normal:before {
+  content: "\6e";
+}
+.icon-ic-cursos:before {
+  content: "\6f";
+}
+.icon-ic-desactivar:before {
+  content: "\70";
+}
+.icon-ic-descarga-plantilla-normal:before {
+  content: "\71";
+}
+.icon-ic-descuentos:before {
+  content: "\72";
+}
+.icon-ic-doc:before {
+  content: "\73";
+}
+.icon-ic-dropdown-press:before {
+  content: "\74";
+}
+.icon-ic-edit-normal:before {
+  content: "\75";
+}
+.icon-ic-estado-on:before {
+  content: "\76";
+}
+.icon-ic-home:before {
+  content: "\77";
+}
+.icon-ic-info:before {
+  content: "\78";
+}
+.icon-ic-logout:before {
+  content: "\79";
+}
+.icon-ic-lookpassword:before {
+  content: "\7a";
+}
+.icon-ic-mensajes:before {
+  content: "\42";
+}
+.icon-ic-menuexpand:before {
+  content: "\43";
+}
+.icon-ic-menuollapse:before {
+  content: "\44";
+}
+.icon-ic-next-normal:before {
+  content: "\45";
+}
+.icon-ic-notification-normal:before {
+  content: "\46";
+}
+.icon-ic-options-normal:before {
+  content: "\47";
+}
+.icon-ic-orderlist:before {
+  content: "\48";
+}
+.icon-ic-paises:before {
+  content: "\49";
+}
+.icon-ic-preguntas:before {
+  content: "\4a";
+}
+.icon-ic-report:before {
+  content: "\4b";
+}
+.icon-ic-search-normal:before {
+  content: "\4c";
+}
+.icon-ic-solicitudes:before {
+  content: "\4d";
+}
+.icon-ic-spam:before {
+  content: "\4e";
+}
+.icon-ic-sponsor:before {
+  content: "\4f";
+}
+.icon-ic-teacher:before {
+  content: "\50";
+}
+.icon-ic-universidades:before {
+  content: "\51";
+}
+.icon-ic-vert-mark:before {
+  content: "\52";
+}
+.icon-img-logo-tismart:before {
+  content: "\53";
+}
+.icon-img-logowabu:before {
+  content: "\54";
+}
+.icon-check:before {
+  content: "\55";
+}
+.icon-cross-normal:before {
+  content: "\61";
+}
+.icon-ic-menos:before {
+  content: "\56";
+}
+.icon-ic-mas:before {
+  content: "\57";
+}
+.icon-ic-nextdoble:before {
+  content: "\58";
+}
+.icon-ic-backdoble:before {
+  content: "\59";
+}
+.icon-cross-normal-copy:before {
+  content: "\5a";
+}
+.icon-ic-dislike:before {
+  content: "\30";
+}
+.icon-ic-downloads:before {
+  content: "\31";
+}
+.icon-ic-likes:before {
+  content: "\32";
+}
+.icon-ic-uploads:before {
+  content: "\33";
+}
+.icon-ic-califica:before {
+  content: "\41";
+}
+.icon-purple:before {
+  content: "\34";
+}
+.icon-blue:before {
+  content: "\35";
+}
+.icon-ic-calendario-normal:before {
+  content: "\36";
+}
+.icon-yellow:before {
+  content: "\37";
+}
+.icon-ic-persona:before {
+  content: "\38";
+}
+.icon-ic-muchotrabajo:before {
+  content: "\39";
+}
+.icon-ic-aprendiste:before {
+  content: "\66";
+}
+.icon-ic-asistencia:before {
+  content: "\21";
+}
+.icon-turquesa:before {
+  content: "\22";
+}
+.icon-normal:before {
+  content: "\23";
+}
+.icon-ic-config:before {
+  content: "\6d";
+}
+.icon-ic-comment:before {
+  content: "\24";
+}
+.icon-ic-mail:before {
+  content: "\25";
+}
+.icon-ic-download-copy:before {
+  content: "\26";
+}
+.icon-ic-casa:before {
+  content: "\27";
+}
+.icon-ic-calendario:before {
+  content: "\29";
+}
+.icon-ic-libro:before {
+  content: "\28";
+}
+.icon-dark:before {
+  content: "\2a";
+}
+.icon-img-logowabu:before {
+  content: "\54";
+}
+.icon-ic-discount:before {
+  content: "\2b";
+}
+.icon-ic-legal:before {
+  content: "\2c";
+}
+.icon-ic-crown:before {
+  content: "\2d";
+}
+.icon-ic-checkbox-mark:before {
+  content: "\6a";
+}
+.icon-ic-check:before {
+  content: "\2e";
+}
+.icon-ic-erase:before {
+  content: "\2f";
+}
+.icon-ic-points-normal:before {
+  content: "\3a";
+}
+.icon-purple:before {
+  content: "\34";
+}
+.icon-notpreview:before {
+  content: "\3b";
+}

@@ -1,0 +1,45 @@
+.error_404
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    font-family: $main-font
+    background-size: cover
+    &:before
+        content: ''
+        background-size: cover
+        background-position: center
+        background-image: url('~assets/images/background/img_fondo.png')
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom:  0
+        margin: auto
+        z-index: -1
+            
+    h2
+        font-size: 160px
+        font-weight: bold
+        color: #fff
+        letter-spacing: 10px
+        line-height: 183px
+        margin-top: 60px
+        margin-bottom: 20px
+    p
+        font-size: 24px
+        color: #FDFFFC
+        letter-spacing: 0.48px
+        line-height: 27px
+        text-align: center
+        margin-bottom: 40px
+
+.powered-styles
+    display: flex
+    align-items: center
+    margin-top: 80px
+    span
+        color: #fff !important
+        font-size: 12px
+        line-height: 14px

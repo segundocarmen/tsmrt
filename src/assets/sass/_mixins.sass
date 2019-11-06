@@ -1,0 +1,13 @@
+@mixin transition($time, $type: ease-in-out) 
+    transition: all $time $type
+    -webkit-transition: all $time $type
+    -moz-transition: all $time $type
+    -ms-transition: all $time $type
+    -o-transition: all $time $type
+
+
+@mixin background-rules($size: cover, $position: center, $repeat: no-repeat)
+    background-size: $size
+    background-position: $position
+    background-repeat: $repeat
+    

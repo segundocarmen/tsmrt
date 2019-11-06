@@ -1,0 +1,67 @@
+.el-table 
+    .descending 
+        .sort-caret.descending
+            border-top-color: #415061 !important
+    .ascending 
+        .sort-caret.ascending
+            border-bottom-color: #415061 !important
+
+.general__table
+    background: #F9FBFE
+    opacity: 1
+    .el-checkbox__input 
+        .el-checkbox__inner,
+        &.is-focus .el-checkbox__inner
+            border-color: rgba(212,215,215,0.8) 
+            border-radius: 4px
+            background: transparent
+        &.is-checked,
+        &.is-indeterminate
+            .el-checkbox__inner
+                // background: #F9FBFE
+                background-color: #415061 !important
+                border-color: #415061
+    thead
+        .cell
+            font-size: 12px
+            font-weight: normal
+            color: #7B8FA0
+            letter-spacing: 0.46px
+            white-space: nowrap
+            text-overflow: ellipsis
+            font-family: "Open Sans"
+            -webkit-font-smoothing: antialiased
+        th
+            border-bottom: 1px solid rgba(18, 131, 255, 0.5) !important
+            padding-bottom: 0 !important
+    tbody
+        .el-table__row
+            .blue__button
+                opacity: 0
+                @include transition(.2s)
+            .cell
+                font-weight: 500
+                font-size: 12px
+                letter-spacing: 0.24px
+                line-height: 14px
+                color: #415061
+                font-family: 'Asap'
+                overflow: initial !important
+            &:hover
+                    > td
+                            background-color: rgba(18,131,255,0.05) !important
+                            background: rgba(18,131,255,0.05) !important
+                            .cell 
+                                font-weight: 600
+                    button
+                        background: rgba(18,131,255,0.05) !important
+                    .blue__button
+                        opacity: 1
+                    .icon-normal
+                        color: #3C99FF
+.view-detail
+    height: 24.35px
+    width: 88.69px
+    font-size: 9px !important
+    letter-spacing: 0.4px
+    font-weight: 600

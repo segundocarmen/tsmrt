@@ -1,0 +1,67 @@
+.login
+    text-align: center
+    .wabu-btn--white
+        width: 178px
+        height: 46px
+        margin-top: 58px
+        span
+            letter-spacing: 1.1px
+            font-weight: 600
+            font-size: 13.2px
+
+.login__form
+    padding-top: 80px
+    input 
+        width: 296px
+        height: 40px
+        border: 0.5px solid #DCDFE6
+        border-radius: 6px
+        background-color: rgba(253,255,252,0.15)
+        color: #ffffff
+        font-size: 15px
+        font-family: $main-font
+        font-weight: 600
+        &::-webkit-credentials-auto-fill-button
+            margin-right: 25px
+    .el-form-item__label
+        color: #ffffff
+        font-size: 12px
+        font-weight: 100
+        letter-spacing: 0.55px
+        line-height: 15px
+        font-family: $login-font
+        margin-bottom: 3px
+    input:-webkit-autofill, input:-webkit-autofill:focus 
+        box-shadow: 0 0 0 1000px white inset
+        -webkit-text-fill-color: #333
+    
+
+.login__logo
+    width: 105px
+
+.forgot-password__link
+    color: #FFFFFF
+    font-size: 13px
+    display: block
+    margin-top: 23px
+    @include transition(0.25s)
+    &:hover
+        opacity: 0.7
+
+.wabu__developer
+    display: flex
+    align-items: center
+    color: #ffffff
+    font-size: 12px
+    -webkit-font-smoothing: antialiased
+    font-weight: 500
+    justify-content: center
+    margin-top: 75px
+    img 
+        width: 70px
+        margin-left: 5px
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0)
+    @media screen
+        .login__form
+            i
+                //color: #415061 !important

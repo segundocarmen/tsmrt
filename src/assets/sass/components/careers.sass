@@ -1,0 +1,234 @@
+.disable__table
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		display: block
+		background: rgba(249, 251, 254, 0.8)
+		height: 100vh
+		z-index: 9
+		opacity: 1
+		visibility: visible
+		transition: all 0.25s
+// .general__table,
+// .course__pagination
+// 	opacity: 0.2
+.detail-icon
+	cursor: pointer
+.career_table
+	.el-table__row
+		height: 50px
+		i
+			opacity: 0
+			visibility: hidden
+			color: #1283FF
+		&:hover
+				i
+					opacity: 1
+					visibility: visible
+		thead
+			th
+				padding-left: 27px
+		tbody
+			td
+				padding-left: 27px
+		td
+			&:first-child
+					div
+							padding-left: 27px
+.form__career_row
+	display: flex
+	margin-bottom: 20px
+	label,
+	em,
+	span
+		color: #909399 !important
+		font-size: 14px !important
+.career__options
+	margin-right: 50px
+	width: 50%
+	display: flex
+	align-items: center
+	.select__caret-style
+		::-webkit-input-placeholder  /* Chrome/Opera/Safari */
+			color: #909399
+			font-size: 14px
+			font-family: $default-font
+			font-weight: lighter	
+		::-moz-placeholder  /* Firefox 19+ */
+			color: #909399
+			font-size: 14px
+			font-family: $default-font
+			font-weight: lighter	
+		:-ms-input-placeholder  /* IE 10+ */
+			color: #909399
+			font-size: 14px
+			font-family: $default-font
+			font-weight: lighter	
+		:-moz-placeholder  /* Firefox 18- */
+			color: #909399
+			font-size: 14px
+			font-family: $default-font
+			font-weight: lighter	
+	label
+		width: inherit !important
+	em
+		font-style: normal
+		display: inline-block
+		margin-right: 15px
+		width: 80px
+		text-align: right
+		-webkit-font-smoothing: antialiased
+	.el-input-number__decrease, .el-input-number__increase
+		width: 37px !important
+	&:first-child
+			label
+				width: 63px !important
+	&:last-child
+			max-width: 320px
+			margin-right: 0
+	
+	.el-form-item
+		margin-bottom: 0
+	.el-form-item
+		width: auto !important
+	.el-select
+		width: 250px
+.add__career
+	.el-form-item__content
+		margin-left: 0 !important
+	input
+		line-height: 18px
+		font-family: "Open Sans"
+.el-select
+	width: 100%
+.career__cicles
+	display: flex
+	align-items: center
+.carrer__list-container
+	background: #fafbff
+	border: 0.5px solid #ebedf0
+	padding: 18px
+	box-sizing: border-box
+	margin-bottom: 20px
+	.multiple__select-input
+		.el-select
+			width: auto
+			.el-input__inner
+				border-radius: 6px
+			&:hover
+				.el-input__inner
+					border: 0.5px solid #ebedf0
+			.el-input.is-focus
+				.el-input__inner
+					border-color: rgba(18, 131, 255, 0.61) !important
+.checkbox__cicle
+	display: flex !important
+	align-items: center
+	margin-left: 20px
+	margin-right: 7px
+	justify-content: flex-end
+	.el-checkbox__inner
+		height: 20px
+		width: 20px
+		border-radius: 6px
+		background: transparent
+		border-color: #CED3D5 !important
+		&:after
+			content: 'U'
+			font-family: fontastic
+			border: 0
+			color: transparent
+			width: inherit !important
+			height: auto !important
+			font-size: 12px
+			transform: translateX(0) !important
+			left: 3px !important
+			top: 0px
+			right: 0		
+		&:before
+				content: ''
+				height: 16px
+				width: 16px
+				border-radius: 6px
+				position: absolute
+	&.is-checked
+		.el-checkbox__inner
+			&:after
+				color: #ffffff
+
+	span	
+		color: #909399
+		font-size: 14px
+		line-height: 18px
+		font-family:  $default-font
+	.el-checkbox__input.is-checked .el-checkbox__inner, 
+	.el-checkbox__input.is-indeterminate .el-checkbox__inner
+		background: #415061
+		border-color: #fff
+.checkbox__period
+	@extend .checkbox__cicle
+	.el-checkbox__inner
+		height: 15px
+		width: 15px
+		border-radius: 4px
+		&:after
+			font-size: 9px
+	.el-checkbox__label	
+		color: #909399 !important
+		font-size: 14px
+		line-height: 18px
+		font-family:  $default-font
+.subtitle__container
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 20px
+	margin-top: 67px
+	.subtitle__blue-general
+		margin-bottom: 0
+	i
+		font-size: 30px
+		display: flex
+		cursor: pointer
+.add__career
+	padding-bottom: 60px
+	.el-form 
+		padding-top: 15px
+	.el-form-item__label
+		-webkit-font-smoothing: antialiased
+	.carrer__list-container
+		min-height: 90px
+		border-radius: 8px
+		padding-bottom: 0
+		.el-select .el-select__tags>span
+			display: none
+		// .el-select__tags
+		// 	&:before
+		// 			content: "Agregar cursos al ciclo"
+		// 			font-size: 10px
+		// 			margin-left: 10px
+		// 			position: absolute
+		.el-select__input,
+		.el-select,
+		.multiple__select-input .el-input input
+			height: 24px !important
+			.el-input__suffix
+        		display: none
+		.subtitle__blue-general
+			margin-bottom: 0
+		.blue__item-list
+			padding: 5px 10px !important
+			width: 160px
+			margin-right: 18px
+			height: fit-content
+			min-height: 24px
+			i
+				right: 10px
+.career__items
+	padding-left: 0
+	display: flex
+	flex-wrap: wrap

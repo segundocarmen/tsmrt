@@ -1,0 +1,325 @@
+.students__style
+    &.detail__student
+        section
+            margin-bottom: 30px
+        .subtitle__blue
+            color: #1283FF
+            font-family: Asap
+            font-size: 18px
+            font-weight: 600
+            letter-spacing: 0.36px
+            line-height: 21px
+        .style__box
+            display: flex
+            justify-content: space-between
+            padding: 0
+            margin-top: 30px
+            h6
+                color: #415061
+                font-family: "Open Sans"
+                font-size: 10px
+                font-weight: bold
+                letter-spacing: 0.45px
+                line-height: 14px
+                margin-bottom: 9px
+            p
+                color: #415061
+                font-family: Asap
+                font-size: 14px
+                letter-spacing: 0.28px
+                line-height: 16px
+                -webkit-font-smoothing: antialiased
+        .course__pagination
+            padding-top: 0
+            padding-bottom: 50px
+        .general__table
+            tbody
+                .cell
+                    font-weight: 100 !important
+                    font-size: 14px
+                    letter-spacing: 0.28px
+                    height: 25px
+                    line-height: 25px
+                    -webkit-font-smoothing: antialiased
+        .courses__box
+            .message__no-data 
+                margin-bottom: 60px
+                margin-top: 30px
+                h3 
+                    font-size: 20px
+            ul
+                display: flex
+                flex-wrap: wrap
+                padding: 0
+                margin-top: 25px
+                li
+                    padding: 10px
+                    margin: 10px 15px 10px 0
+                    border: 0.5px solid #1283FF
+                    border-radius: 4px
+                    width: 194.16px
+                    box-sizing: border-box
+                    p
+                        color: #415061
+                        font-family: Asap
+                        font-size: 13px
+                        letter-spacing: 0.26px
+                        line-height: 15px
+                    span
+                        color: #7B8FA0
+                        font-family: "Open Sans"
+                        font-size: 10px
+                        letter-spacing: 0.2px
+                        line-height: 14px
+        .style-email
+            color: #415061
+            font-family: "Open Sans"
+            font-size: 10px
+            font-weight: bold
+            letter-spacing: 0.45px
+            line-height: 14px
+        .email__style
+            color: #415061
+            font-family: Asap
+            font-size: 14px
+            letter-spacing: 0.28px
+            line-height: 16px
+            margin-right: 30px
+        .el-checkbox__input
+            margin-right: 10px
+            &.is-checked
+                &::after
+                    border: 2px solid #1283FF
+                .el-checkbox__inner
+                    &::after
+                        transform: rotate(5deg) scaleY(1)
+        .el-checkbox__inner
+            border-radius: 50%
+            border: 1px solid rgba(123,143,160,0.4)!important
+            background-color: #FFF !important
+            content: ''
+            width: 16px
+            height: 16px
+            &::after
+                content: '\55'
+                font-family: fontastic
+                color: #1383FF
+                left: 2px
+                top: 2px
+                font-size: 10.5px
+            &::before
+                content: ''
+                font-family: fontastic
+        .style__box__academy
+            @extend .style__box
+            flex-wrap: wrap
+            li
+                margin: 0 30px 20px 0
+        .style__box__basic__information
+            @extend .style__box
+            //padding-left: 20px
+            li
+                // width: 80px
+                margin-right: 20px
+                p
+                    color: #415061
+                    font-family: Asap
+                    font-size: 10px
+                    letter-spacing: 0.38px
+                    line-height: 11px
+                i
+                    color: #1283FF
+                    font-size: 25px
+                h6
+                    margin-bottom: 5px
+                    strong
+                        color: #415061
+                        font-family: Asap
+                        font-size: 12px
+                        font-weight: bold
+                        letter-spacing: 0.46px
+                        line-height: 14px
+                        position: relative
+                        bottom: 5px
+                        left: 8px
+        .style__box__blue
+            @extend .style__box
+            h6
+                color: #1283FF
+                font-family: "Open Sans"
+                font-size: 10px
+                font-weight: bold
+                letter-spacing: 0.45px
+                line-height: 14px
+            p
+                color: #415061
+                font-family: Asap
+                font-size: 14px
+                letter-spacing: 0.28px
+                line-height: 16px
+            .el-checkbox
+                .el-checkbox__inner
+                    border-radius: 4px
+            .is-checked
+                .el-checkbox__inner
+                    border-radius: 4px
+                    background-color: #1283FF
+                .el-checkbox__label
+                    color: #415061
+            .el-checkbox__label
+                font-weight: 100
+        .box--information
+            width: 60%
+            margin-left: 70px
+        .email__checkbox
+            .el-checkbox__input
+                margin-right: 10px
+                &.is-checked
+                    &::after
+                        border: 2px solid #1283FF
+                    .el-checkbox__inner
+                        &::after
+                            transform: rotate(5deg) scaleY(1)
+                            border: 0
+            .el-checkbox__inner
+                border-radius: 50%
+                border: 1px solid rgba(123,143,160,0.4)!important
+                background-color: #FFF !important
+                content: ''
+                width: 16px
+                height: 16px
+                &::after
+                    content: '\55'
+                    font-family: fontastic
+                    color: #1383FF
+                    left: 2px
+                    top: 2px
+                    font-size: 10.5px
+                &::before
+                    content: ''
+                    font-family: fontastic
+        .embajador__checkbox
+            @extend .email__checkbox
+            &.is-checked
+                .el-checkbox__inner
+                    background-color: #1283FF !important
+            .el-checkbox__inner
+                background-color: #1283FF
+                &::after
+                    content: '\55'
+                    font-family: fontastic
+                    color: #FFF
+                    border: none
+                    font-size: 10.5px
+                &::before
+                    content: ''
+
+        .subtitle
+            color: #7B8FA0
+            font-family: Asap
+            font-size: 12px
+            letter-spacing: 0.24px
+            line-height: 14px
+            text-align: center
+            margin-top: 20px
+            font-weight: 500
+            strong
+                color: #7B8FA0
+                font-weight: 100
+            .center
+                text-align: center
+        .style__img
+            width: 121px
+            height: 121px
+            border-radius: 12px
+            box-shadow: 0 2px 6px 0 rgba(0,0,0,0.04), 0 1px 2px 0 rgba(0,0,0,0.04), 0 1px 2px 0 rgba(0,0,0,0.18)
+            object-fit: cover
+        .style__emblemed
+            position: absolute
+            bottom: 35px
+            right: -22px
+        .box__image__student
+            position: relative
+    &.edit__student
+        .label__style
+            margin-bottom: -5px
+            -webkit-font-smoothing: antialiased
+        .el-form-item__label
+            width: auto
+        .subtitle__blue
+            color: #1283FF
+            font-family: Asap
+            font-size: 20px
+            font-weight: 600
+            letter-spacing: 0.4px
+            line-height: 23px
+            -webkit-font-smoothing: antialiased
+        .input__edit
+            margin: 10px 0 52px
+            .el-form-item__label
+                color: #7B8FA0
+                font-family: "Open Sans"
+                font-size: 12px
+                font-weight: 600
+                letter-spacing: 0.46px
+                //line-height: 14px
+            .el-input
+                width: 299.53px
+                border-radius: 4px
+                background-color: rgba(255,255,255,0.5)
+                margin-right: 40px
+        .letter__gray
+            color: #909399
+            font-family: "Open Sans"
+            font-size: 14px
+            line-height: 18px
+            margin: 30px 0
+            -webkit-font-smoothing: antialiased
+            strong
+                margin-left: 20px
+        .el-input__inner
+            color: #909399
+            font-family: "Open Sans"
+            font-size: 14px
+            line-height: 18px
+        .box__points
+            display: flex
+            justify-content: space-between
+            width: 500px
+            .el-form-item
+                display: flex
+            .margin-right
+                margin-right: 35px
+            .el-radio__label
+                color: #415061
+                font-family: "Open Sans"
+                font-size: 14px
+                line-height: 18px
+            .is-checked
+                .el-radio__inner
+                    border-color: #1283FF
+                    background: #1283FF
+                    width: 16px
+                    height: 16px
+            .input__points
+                .el-form-item__label
+                    color: #909399
+                    font-family: "Open Sans"
+                    font-size: 14px
+                .el-form-item__content
+                    width: 130.42px
+                    border-radius: 4px
+                    background-color: rgba(255,255,255,0.5)
+.btn__validate
+    width: 118.25px
+    border-radius: 24px
+    span
+        font-size: 9px !important
+        font-weight: 600
+        letter-spacing: 0.54px
+.d-flex
+    display: flex
+    align-items: center
+.d-flex-wrap
+    display: flex
+    flex-wrap: wrap

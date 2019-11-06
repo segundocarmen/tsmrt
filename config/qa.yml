@@ -1,0 +1,55 @@
+router:
+  base: "/"
+
+axios:
+  baseURL: "http://0.0.0.0:3000/"
+  browserBaseURL: /
+  debug: true
+
+proxy:
+  "/api/authentication":
+    target: https://newapp.qa.wabuapp.com/authentication-service
+  "/api/country":
+    target: https://newapp.qa.wabuapp.com/country-service
+  "/api/college":
+    target: https://newapp.qa.wabuapp.com/college-service
+  "/api/career":
+    target: https://newapp.qa.wabuapp.com/career-service
+  "/api/course":
+    target: https://newapp.qa.wabuapp.com/course-service
+  "/api/suggest":
+    target: https://newapp.qa.wabuapp.com/suggest-service
+  "/api/teacher":
+    target: https://newapp.qa.wabuapp.com/teacher-service
+  "/api/faculty":
+    target: https://newapp.qa.wabuapp.com/faculty-service
+  "/api/location":
+    target: https://newapp.qa.wabuapp.com/location-service
+  "/api/calendar":
+    target: https://newapp.qa.wabuapp.com/calendar-service
+  "/api/student":
+    target: https://newapp.qa.wabuapp.com/student-service
+  "/api/register-enrollment":
+    target: https://newapp.qa.wabuapp.com/register-enrollment-service
+  "/api/document":
+    target: https://newapp.qa.wabuapp.com/document-service
+  "/api/question":
+    target: https://newapp.qa.wabuapp.com/question-service
+  "/api/award":
+    target: https://newapp.qa.wabuapp.com/award-service
+  "/api/competitor":
+    target: https://newapp.qa.wabuapp.com/competitor-service
+  "/api/comment":
+    target: https://newapp.qa.wabuapp.com/comment-service
+  "/api/point":
+    target: https://newapp.qa.wabuapp.com/point-service
+
+healthcheck:
+  path: "/health"
+
+#S3 Access
+aws:
+  s3:
+    region: "us-west-2"
+    bucket: "wabu-dev-us-west-2"
+    cognitoId: "us-west-2:732420e5-11d7-49df-a42b-2e9cab6001de"
