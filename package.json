@@ -62,7 +62,7 @@
 		"@kazupon/vue-i18n-loader": "0.3.0",
 		"babel-cli": "6.26.0",
 		"babel-loader": "8.0.4",
-		"bestzip": "2.1.2",
+		"bestzip": "2.1.7",
 		"core-js": "2.6.5",
 		"cross-env": "5.2.0",
 		"json-loader": "0.5.7",
