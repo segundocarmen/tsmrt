@@ -41,7 +41,7 @@
 		"nuxt-healthcheck": "1.0.1",
 		"nuxt-i18n": "5.2.1",
 		"nuxt-rfg-icon": "0.6.2",
-		"papaparse": "4.6.3",
+		"papaparse": "5.2.0",
 		"please-wait": "0.0.5",
 		"read-excel-file": "^4.0.1",
 		"rimraf": "2.6.2",
