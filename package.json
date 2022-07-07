@@ -34,7 +34,7 @@
 		"fs": "0.0.1-security",
 		"js-cookie": "2.2.0",
 		"js-yaml": "3.12.0",
-		"moment": "2.22.2",
+		"moment": "2.29.4",
 		"node-excel-export": "1.4.4",
 		"nuxt": "2.4.3",
 		"nuxt-dropzone": "0.2.8",
