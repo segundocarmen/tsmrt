@@ -36,7 +36,7 @@
 		"js-yaml": "3.12.0",
 		"moment": "2.22.2",
 		"node-excel-export": "1.4.4",
-		"nuxt": "2.4.3",
+		"nuxt": "2.15.8",
 		"nuxt-dropzone": "0.2.8",
 		"nuxt-healthcheck": "1.0.1",
 		"nuxt-i18n": "5.2.1",
